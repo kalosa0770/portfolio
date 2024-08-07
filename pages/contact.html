@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="../css/contact.css">
+    <link rel="stylesheet" href="../fontawesome-free-6.5.2-web/css/all.min.css">
+
+</head>
+<body>
+    <header>
+        <div class="container-header"> 
+            <div class="logo">
+                <img src="../assets/elijah4.jpg" alt="Logo">
+            </div>
+            <nav>
+                <ul class="sidebar">     
+                    
+                        <li onclick=hideOnClose()><i class="fa-solid fa-close"></i></li>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    
+                </ul>
+                
+                <ul>
+                    <li class="hideOnClose"><a href="index.html">About</a></li>
+                    <li class="hideOnClose"><a href="about.html">Specification</a></li>
+                    <li class="hideOnClose"><a href="contact.html">Contact</a></li>
+                    <li class="menu-bar" onclick=showSideBar()><i class="fa-solid fa-bars"></i></li>
+                </ul>
+            </nav>
+
+            <script>
+                function showSideBar(){
+                    const sidebar = document.querySelector('.sidebar')
+                    sidebar.style.display = 'flex'
+                }
+
+                function hideOnClose() {
+                    const hidebar = document.querySelector('.sidebar')
+                    hidebar.style.display = 'none'
+                }
+            </script>
+        </div>
+        <div class="form-contact">
+          
+            <div class="contact-intro">
+              <p>Connect with me and be part of a collaborative team.</p>
+            </div>
+            <form action="">
+                <div class="name">
+                    <label for="firstname">FIRST NAME</label>
+                    <input type="text" name="firstname" id="firstname" placeholder="Enter your first name" required>
+                </div>
+    
+                <div class="name">
+                    <label for="lastname">LAST NAME</label>
+                    <input type="text" name="lastname" id="lastname" placeholder="Enter your last name" required>
+                </div>
+    
+                <div class="name">
+                    <label for="Email">EMAIL ADDRESS</label>
+                 <input type="text" name="email" id="email" placeholder="Enter your email address" required>
+                </div>
+    
+                <div class="name">
+                    <label for="number">PHONE NUMBER</label>
+                    <input type="tel" name="number" id="number" placeholder="Enter you phone number" required>
+                </div>
+    
+                <div class="name">
+                    <label for="message">MESSAGE</label>
+                    <textarea name="msg" id="msg" placeholder="How can we help you?" required></textarea>
+                </div>
+                <div class="membership-link">
+                    <a href="#">Contact Me</a>
+                </div>
+            </form>
+            <hr>
+        </div>
+
+</body>
+</html>

@@ -1,0 +1,461 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f4;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #f1f1f1;
+    color: #fff;
+    text-align: center;
+}
+
+.container-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container-header .logo {
+    padding: 10px;
+}
+
+.container-header .logo img {
+  width: 100px;
+  float: left;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+
+nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+}
+
+nav li {
+    
+    height: 50px;
+} 
+
+nav a {
+    color: #000;
+    text-decoration: none;
+    padding: 0 30px;
+    font-size: 1.2rem;
+    height: 100%;
+    align-items: center;
+    display: flex;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    color: black;
+    align-items: flex-start;
+    justify-content: flex-start;
+    height: 100vh;
+    width: 100%;
+    display: none;
+    flex-direction: column;
+    z-index: 999;
+    box-shadow: -10px 0px 10px rgba(0, 0, 0, 0.1);
+    background-color: white;
+}
+
+.menu-bar {
+    display: none;
+}
+
+.sidebar li {
+    width: 100%;
+}
+
+.sidebar li a {
+    width: 100%;
+}
+
+@media screen and (max-width: 800px) {
+    .hideOnClose {
+        display: none;
+    }
+
+    .fa-solid.fa-close {
+        font-size: 1.5rem;
+        padding-top: 20px;
+    }
+
+    .menu-bar {
+        display: block;
+        font-size: 1.8rem;
+        padding-right: 18px;
+    }
+}
+
+
+/* .card {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 100%;
+    height: 400px;
+} */
+
+
+h2 {
+    color: #333;
+    border-bottom: 2px solid #333;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 5px;
+}
+
+p {
+    line-height: 1.6;
+}
+
+
+.intro h2,
+.back h2,
+.skills h2,
+.interests h2 {
+    margin-top: 0;
+    text-decoration: none;
+}
+
+.intro img {
+    width: 100%;
+    height: 270px;
+    object-fit: fill;
+    object-position: 100%;
+    border-radius: 5px; 
+}
+
+.back img {
+    width: 100%;
+    height: 270px;
+    object-fit: fill;
+    border-radius: 5px; 
+}
+
+.card .intro {
+    padding-top: 50px;
+    width: 100%;
+    display: flex;
+}
+
+.card .intro p {
+    font-size: 2.5rem;
+    font-weight: lighter;
+    margin-top: 20px;
+    text-align: left;
+    /* padding-top: 70px;
+    padding-left: 40px; */
+    padding: 100px 40px;
+}
+
+.card h2 {
+    font-size: 1.9rem;
+    margin: 40px;
+    text-align: right;
+}
+
+.card h3 {
+    font-size: 1.9rem;
+    margin: 40px;
+    text-align: left;
+}
+
+.card .intro img {
+    width: 100%;
+    max-width: 700px;
+    height: auto;
+    display: block;
+   margin: 50px;
+}
+
+.card .skills {
+    padding-top: 20px;
+    width: 100%;
+    background-color: #d0cccc;
+    min-height: max-content;
+    margin: auto;
+    animation-name: skills;
+    animation-duration: 1s; 
+    animation-timing-function: linear; 
+    animation-timeline: view();
+}
+
+.card .skills h2 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.card .skills p {
+    font-size: 1.5rem;
+    font-weight: lighter;
+    text-align: center;
+}
+
+.card .skills ul {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    list-style: decimal;
+    list-style-position: inside;
+    padding: 0;
+    margin: 30px auto; /* Center the list */
+    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+}
+
+.card .skills ul li {
+    padding-right: 30px;
+    font-size: 2rem;
+}
+
+
+.card .interests {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.card .interests .int, .card .interests .str {
+    width: 48%;
+    margin-bottom: 20px;
+}
+
+.card .interests h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #000;
+}
+
+.card .interests p {
+    font-size: 1.3rem;
+    line-height: 1.6;
+    color: #000;
+    font-weight: lighter;
+}
+
+.card .interests a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.card .interests a:hover {
+    text-decoration: underline;
+}
+
+.card .interests i {
+    margin: 0 5px;
+    font-size: 1.5rem;
+}
+
+.card .interests i:hover {
+    color: #007bff;
+}
+
+@keyframes skills {
+    from {
+        transform: scale(0.5); 
+    }
+
+    to {
+        transform: scale(1); 
+    }
+}
+.interests h2 {
+    margin-bottom: 10px;
+}
+
+footer p {
+    text-align: center;
+    padding-top: 40px;
+    font-size: 1.5rem;
+}
+
+
+@media screen and (max-width: 1200px) {
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    body {
+        background-color: #f9f5f5;
+    }
+
+    .container-header {
+     display: flex;
+     flex-wrap: nowrap;
+     flex-direction: row;
+     width: 100%;
+     position: fixed;
+     z-index: 999;
+     background-color: #f1f1f1;
+     height: 20vh;
+     margin: 0;
+    }
+
+    .logo img {
+     width: 60px;
+     height: 80px;
+    }
+
+   .card .intro {
+    padding-top: 90px;
+    width: 100%;
+    display: block;
+    max-width: 100%;
+   }
+
+   .card .intro p {
+    font-size: 1.7rem;
+    font-weight: lighter;
+    margin-top: 90px;
+    text-align: left;
+    /* padding-top: 70px;
+    padding-left: 40px; */
+    padding: 10px 4px;
+}
+
+   .card h2 {
+    font-size: 1.9rem;
+    margin: 2px;
+    text-align: right;
+    display: none;
+  
+}
+
+.card h3 {
+    font-size: 1.9rem;
+    margin-top: 20px;
+    text-align: left;
+}
+
+   .card .intro img {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+   }
+
+   .card .back {
+    width: 100%;
+    padding-top: 50px;
+   }
+
+   .card .back p {
+    font-size: 1.3rem;
+    padding-bottom: 20px;
+   }
+
+   .card .back img {
+    width: 100%;
+    height: 100%;
+    padding-bottom: 50px;
+   }
+
+   .card .skills {
+    padding: 8px;
+    width: 100%;
+    background-color: #d0cccc;
+    min-height: max-content;
+    border-radius: 10px;
+   }
+
+   .card .skills p {
+    font-size: 1.3rem;
+    text-align: center;
+   }
+
+   .card .skills h2 {
+    margin-right: 50px;
+    display: none;
+   }
+
+   .card .skills ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: left;
+    padding: 8px;
+   }
+
+   .card .skills ul li {
+        padding: 10px;
+        align-items: flex-start;
+        justify-content: flex-start;
+        font-size: 1.4rem;
+        list-style-type: decimal;
+        list-style-position: inside;
+   }
+
+   .card .interests {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 20px;
+    width: 100%;
+    max-width: 100%;
+}
+
+.card .interests .int, .card .interests .str {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.card .interests h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #000;
+}
+
+.card .interests p {
+    font-size: 1.3rem;
+    line-height: 1.6;
+    color: #000;
+    font-weight: lighter;
+}
+
+.card .interests a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.card .interests a:hover {
+    text-decoration: underline;
+}
+
+.card .interests i {
+    margin: 0 5px;
+    font-size: 1.5rem;
+}
+
+.card .interests i:hover {
+    color: #007bff;
+}
+}

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ELIJAH KALOSA</title>
+    <link rel="stylesheet" href="../fontawesome-free-6.5.2-web/css/all.min.css">
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+
+    <header>
+        <div class="container-header"> 
+            <div class="logo">
+                <img src="../assets/elijah4.jpg" alt="Logo">
+            </div>
+            <nav>
+                <ul class="sidebar">     
+                    
+                        <li onclick=hideOnClose()><i class="fa-solid fa-close"></i></li>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    
+                </ul>
+                
+                <ul>
+                    <li class="hideOnClose"><a href="index.html">About</a></li>
+                    <li class="hideOnClose"><a href="about.html">Specification</a></li>
+                    <li class="hideOnClose"><a href="contact.html">Contact</a></li>
+                    <li class="menu-bar" onclick=showSideBar()><i class="fa-solid fa-bars"></i></li>
+                </ul>
+            </nav>
+
+            <script>
+                function showSideBar(){
+                    const sidebar = document.querySelector('.sidebar')
+                    sidebar.style.display = 'flex'
+                }
+
+                function hideOnClose() {
+                    const hidebar = document.querySelector('.sidebar')
+                    hidebar.style.display = 'none'
+                }
+            </script>
+        </div>
+    
+    </header>
+
+<div class="main-conatiner">
+    <!--Intro-->
+    <section>
+        <div class="intro">
+            <h2>About Me</h2>
+            <div class="about1">
+                <p>Hi <strong>there!</strong>, I am Elijah Kalosa. I am a web developer who loves creating responsive and visually appealing websites. With solid skills in PHP and MySQL, I enjoy writing clean code and bringing ideas to life. When I am not coding, I stay active with sports, which helps keep my mind sharp and creative. Let us create something great together!</p>
+               
+            </div>
+        </div>
+    </section>        
+   
+    <section>
+        <div class="images">
+            <img src="../assets/elijah-1.jpg" alt="">
+            <img src="../assets/elijah3.jpg" alt="">
+        </div>
+    </section>
+
+    <section>
+        <div class="skill">
+            <p>
+                I believe in collaborative skills because they help in making work easier. Working well with others enhances productivity and fosters a positive work environment.
+            </p>
+            <p>
+                I am a problem solver and I like to think outside the box. I am always looking for new ways to solve problems and improve my skills.
+            </p>
+            
+        </div>
+    </section>
+
+    <section>
+        <div class="languages">
+            <h3>
+                I am proficient in multiple programming languages that include; 
+            </h3>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>PHP</li>
+            </ul>
+            <p>
+                I have experience creating web applications and working with server-side languages and relational databases. I am always eager to learn new technologies and expand my skillset.
+            </p>
+        </div>
+    </section>
+           <div class="conclusion">
+            <p>In addition to my tech interests, I am passionate about sports, they help me stay in shape and keep my mind active and alert.</p>
+           </div>
+    </section>
+    
+    <section>
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="portfolio-item">
+                <img src="../assets/ej.jpg" alt="Project 1">
+                <p>A rare photo of me teaching c++ language.</p>
+            </div>
+            <!-- Add more portfolio items as needed -->
+        </div>
+    </section>
+    
+    <section>
+        <div class="container-form">
+            <h2>Contact Me</h2>
+            <form action="POST">
+               <div class="name">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+               </div>
+               <div class="name">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+               </div>
+                <div class="name">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+                <br><button type="submit">Send</button>
+            </form>
+        </div>
+    </section>
+</div>
+
+
+<hr>
+<footer>
+    <div class="container-footer">
+        <p>&copy; Elijah Kalosa. All rights reserved.</p>
+    </div>
+</footer>
+
+</body>
+
+
+</script>
+</html>
