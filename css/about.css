@@ -276,7 +276,7 @@ p {
 }
 
 .card .interests i:hover {
-    color: #007bff;
+    color: none;
 }
 
 @keyframes skills {
@@ -454,9 +454,10 @@ footer p {
 .card .interests i {
     margin: 0 5px;
     font-size: 1.5rem;
+    cursor: pointer;
 }
 
 .card .interests i:hover {
-    color: #007bff;
+    color: none;
 }
 }
