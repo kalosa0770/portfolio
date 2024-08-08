@@ -209,17 +209,7 @@ form input[type="text"] {
     body {
         background-color: #f9f5f5;
     }
-    .container-header {
-        display: flex;
-        flex-wrap: nowrap;
-        flex-direction: row;
-        width: 100%;
-        position: fixed;
-        z-index: 999;
-        background-color: #f1f1f1;
-        height: 20vh;
-        margin: 0;
-       }
+    
 
     .logo img {
         width: 60px;
