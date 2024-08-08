@@ -215,11 +215,6 @@ form input[type="text"] {
         width: 60px;
         height: 80px;
        }
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
     .contact-intro {
         display: block;
         width: 100%;
@@ -228,8 +223,8 @@ form input[type="text"] {
     .form-contact {
         display: block;
         max-width: 100%;
-        margin-top: none;
-        padding-top: none;
+        margin-top: 50px;
+        padding-top: 70px;
     }
 
     .form-contact .contact-intro  p{
