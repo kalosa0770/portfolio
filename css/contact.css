@@ -4,6 +4,12 @@
     text-align: center;
 } */
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 .container-header {
     display: flex;
     justify-content: space-between;
@@ -87,6 +93,7 @@ nav a {
         display: block;
         font-size: 1.8rem;
         padding-right: 18px;
+        color: #000;
     }
 }
 
@@ -196,6 +203,11 @@ form input[type="text"] {
 }
 
 @media screen and (max-width: 1200px) {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
     .contact-intro {
         display: block;
         width: 100%;
@@ -203,7 +215,7 @@ form input[type="text"] {
 
     .form-contact {
         display: block;
-        width: 100%;
+        max-width: 100%;
         margin-top: none;
         padding-top: none;
     }
