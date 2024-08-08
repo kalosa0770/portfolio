@@ -8,11 +8,12 @@ body {
    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #f4f4f4;
     min-height: 100vh;
+    color: #000;
 }
 
 header {
     background-color: #f1f1f1;
-    color: #fff;
+    color: #000;
     text-align: center;
 }
 
