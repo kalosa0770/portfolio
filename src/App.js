@@ -176,6 +176,10 @@ function App() {
             <button type='submit' className='contactButton'>Send Message</button>
           </form>
         </section>  
+        <section className='footer'>
+          <p className='footerText'>© 2025 Elijah Kalosa. All rights reserved.</p>
+        </section>
+        
       </main>
     </div>
   );

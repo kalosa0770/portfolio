@@ -499,4 +499,11 @@ code {
     height: 200px;
     
   }
+}  
+
+.footer {
+  background-color: #fff;
+  padding: 1.5rem 3rem;
+  text-align: center;
+  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
 }
